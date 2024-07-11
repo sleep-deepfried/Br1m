@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Archivo, Archivo_Black } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const archivo_init = Archivo({ 
+  subsets: ["latin"], 
+  display: "swap",
+  variable: '--font-arhivo',
+  weight: ["400", "700"],
+});
+
+export const archivoBlack = Archivo_Black({ 
+  subsets: ["latin"], 
+  display: "swap",
+  variable: '--font-arhivo-black',
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,3 +34,4 @@ export default function RootLayout({
     </html>
   );
 }
+
