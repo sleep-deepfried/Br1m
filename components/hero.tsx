@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Hero(){
     return(
-        <div className="min-h-[128vh] bg-hero bg-no-repeat bg-cover flex items-end px-40 py-20">
+        <div className="min-h-[124vh] bg-hero bg-no-repeat bg-cover flex items-end px-40 py-20">
             <div className="flex flex-col gap-20">
                 <p className="text-8xl font-bold">
                     Find projects here
