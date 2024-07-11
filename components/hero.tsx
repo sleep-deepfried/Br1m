@@ -7,16 +7,16 @@ function Hero(){
                 <p className="text-8xl font-bold">
                     Find projects here
                 </p>
-                <p className="text-3xl">
+                <p className="text-3xl text-hero-text">
                     Unlock creativity and spark collaboration. Your ultimate destination for projects and dynamic discussions.
                 </p>
                 <div>
                     <input 
-                        className="p-2 rounded-s-md" 
+                        className="p-3 rounded-s-md text-black" 
                             type="text" 
                             placeholder="Email Address" 
                         />
-                    <button className="bg-gray p-2 rounded-e-md">
+                    <button className="bg-gray py-3 px-8 rounded-e-md font-bold">
                         Sign up for BR1M
                     </button>
                 </div>

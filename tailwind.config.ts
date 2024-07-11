@@ -18,7 +18,9 @@ const config: Config = {
         
       },
       colors:{
-        gray: "#3B3840"
+        gray: "#3B3840",
+        footer:"#0D1117",
+        "hero-text":"#8B949E"
       }
     },
   },
