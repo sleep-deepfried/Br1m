@@ -10,6 +10,24 @@
   font-size: normal;
 }
 
+@font-face{
+  font-family: NotoSans;
+  src: url(/fonts/Noto_Sans/static/NotoSans-Regular.ttf);
+  font-weight: normal;
+  font-size: normal;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

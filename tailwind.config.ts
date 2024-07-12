@@ -20,7 +20,12 @@ const config: Config = {
       colors:{
         gray: "#3B3840",
         footer:"#0D1117",
-        "hero-text":"#8B949E"
+        "hero-text":"#8B949E",
+        "feed-navbar": "#DEDEDE",
+        "feed-sidebar": "#F6F6F6",
+        "feed-main":"#FAFAFA",
+        "feed-category":"#eae8ed",
+
       }
     },
   },
