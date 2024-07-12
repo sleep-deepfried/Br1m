@@ -8,7 +8,7 @@ function Footer(){
                 <div className="grid grid-cols-6 py-12">
                     <div className="flex flex-col gap-10 col-span-2">
                         <div className="flex flex-row gap-1">
-                            <Image src="/images/logo.svg" alt="logo" width={35} height={35} />
+                            {/* <Image src="/images/logo.svg" alt="logo" width={35} height={35} /> */}
                             <p className="text-3xl font-[BlackOpsOne]">
                                 BR1M
                             </p>
