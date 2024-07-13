@@ -25,6 +25,8 @@ const config: Config = {
         "feed-sidebar": "#F6F6F6",
         "feed-main":"#FAFAFA",
         "feed-category":"#eae8ed",
+        "twiitter": '#000000',
+        "instagram": '#EF5060'
 
       }
     },

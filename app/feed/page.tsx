@@ -59,6 +59,7 @@ function Feed() {
             comments: 130,
         },
         {
+            project:'FoundIt',
             name: 'FoundIt',
             certified: true,
             description: 'Where productivity meets community',
@@ -141,7 +142,7 @@ function Feed() {
                 </div>
 
                 {/* Main Feed */}
-                <div className="pt-20 w-3/5 p-5 ml-1/5 h-screen overflow-y-auto hide-scrollbar bg-feed-main">
+                <div className="pt-20 w-3/5 p-5 ml-1/5 min-h-screen overflow-y-auto hide-scrollbar bg-feed-main">
                     <div className="space-y-4">
                         {projects.map((project, index) => (
                             <Link className='flex flex-col' key={index} href={`/projects/${project?.project}`}>
