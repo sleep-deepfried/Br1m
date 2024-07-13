@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from "next/image";
+import { signIn } from 'next-auth/react';
 
 function Navbar() {
     const [isSignInOpen, setIsSignInOpen] = useState(false);
@@ -13,6 +14,8 @@ function Navbar() {
     const handleCloseClick = () => {
         setIsSignInOpen(false);
     };
+
+    
 
     return (
         <div>
@@ -50,7 +53,8 @@ function Navbar() {
                                         Sign in with Github
                                     </p>
                                 </button> */}
-                                <button className="flex flex-row justify-center items-center gap-2 bg-white text-black px-20 py-3 rounded-md shadow-sm shadow-gray">
+                                <button onClick={async () => await signIn('google', { callbackUrl: '/feed' })} 
+                                    className="flex flex-row justify-center items-center gap-2 bg-white text-black px-20 py-3 rounded-md shadow-sm shadow-gray">
                                     <Image src="/images/google-logo.svg" alt='Google Logo' width={30} height={30} />
                                     <p>
                                         Sign in with Google

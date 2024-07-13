@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import Image from 'next/image';
 
+import FeedNavbar from '@components/feed-navarbar';
+import Sidebar from '@components/sidebar';
+
 const projects = [
     {
         project: 'Dao',
@@ -96,49 +99,9 @@ function ProjectDetails() {
     return (
         <div className="flex h-screen text-black bg-white">
             {/* Navbar */}
-            <div className="fixed w-full z-20 flex justify-between items-center py-3 px-9 bg-feed-navbar text-black">
-                <div className="flex items-center space-x-4">
-                    <p className="font-[BlackOpsOne] text-3xl">BR1M</p>
-                    <input type="text" placeholder="Search" className="text-sm border border-black px-4 py-1 rounded-full" />
-                    <div className="flex space-x-4">
-                        <button className="">Categories</button>
-                        <button className="">Countries</button>
-                    </div>
-                </div>
-                
-                <div className="bg-green-400 rounded-full w-10 h-10"></div>
-            </div>
+            <FeedNavbar />
             {/* Sidebar */}
-            <div className="pt-20 w-1/5 p-5 bg-gray-100 bg-feed-sidebar left-0 font-[NotoSans]">
-                <div className="flex items-center space-x-2 mb-6">
-                    <div className="bg-green-400 rounded-full w-10 h-10"></div>
-                    <span>Gson</span>
-                </div>
-                <div className="mb-6">
-                    <div className='flex items-center text-xs space-x-24'>
-                        <p className="text-[13px] font-bold">Top Projects</p>
-                        <button className="bg-green-700 text-white py-2 px-5 rounded-md">+ New</button>
-                    </div>
-                    
-                    <div>
-                        <div className='flex items-center space-x-2 text-sm'>
-                            <div className=' p-px rounded-full'>
-                                <Image src="/images/solaknows-logo.png" alt="alt" width={16} height={16} />
-                            </div>
-                            <p>SolaKnows</p>
-                        </div>
-                        <div className='flex items-center space-x-2 text-sm'>
-                            <Image src="/images/projecto-logo.svg" alt="alt" width={16} height={16} />
-                            <p>Proyecto</p>
-                        </div>
-                        <div className='flex items-center space-x-2 text-sm'>
-                            <Image src="/images/br1m-logo.svg" alt="alt" width={16} height={16} />
-                            <p>BR1M</p>
-                        </div>
-                    </div>
-                    <button className="mt-5 text-hero-text">Show more</button>
-                </div>
-            </div>
+            <Sidebar />
 
             {/* Project Detail */}
             <div className="w-3/5 p-5 ml-1/5 overflow-y-auto hide-scrollbar h-screen">
