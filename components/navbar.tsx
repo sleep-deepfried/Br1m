@@ -60,7 +60,8 @@ function Navbar() {
                                         Sign in with Google
                                     </p>
                                 </button>
-                                <button className="flex flex-row justify-center items-center gap-2 bg-blue-500 text-white px-20 py-3 rounded-md">
+                                <button onClick={async () => await signIn('facebook', { callbackUrl:'/feed'})}
+                                    className="flex flex-row justify-center items-center gap-2 bg-blue-500 text-white px-20 py-3 rounded-md">
                                     <Image src="/images/facebook-logo.svg" alt='Facebook Logo' width={30} height={30} />
                                     <p>
                                         Sign in with Facebook

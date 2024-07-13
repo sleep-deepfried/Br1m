@@ -16,11 +16,11 @@ function FeedNavbar() {
         }
     }, [status]);
 
-    useEffect(() => {
-        if (!session) {
-            window.location.href = window.location.origin;
-        }
-    }, [session]);
+    // useEffect(() => {
+    //     if (session) {
+    //         window.location.href = window.location.origin;
+    //     }
+    // }, [session]);
 
     const handleSignOut = () => {
         signOut()
@@ -59,7 +59,7 @@ function FeedNavbar() {
                         </div>
                     </button>
                     {isOpen && (
-                        <div className='absolute flex flex-col justify-center w-48 mt-4 z-20'>
+                        <div className= 'absolute top-20 right-7'>
                             <button onClick={handleSignOut}>Sign Out</button>
                         </div>
                     )}
